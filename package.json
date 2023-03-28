@@ -1,6 +1,6 @@
 {
   "name": "@fullfabric/prettier-cfg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prettier config for FullFabric projects.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "prettier": "^2.8.7"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "prettier.config.js"
   ]
 }
