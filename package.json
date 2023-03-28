@@ -1,0 +1,29 @@
+{
+  "name": "@fullfabric/prettier-cfg",
+  "version": "1.0.0",
+  "description": "Prettier config for FullFabric projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullfabric/prettier-cfg.git"
+  },
+  "keywords": [
+    "Prettier",
+    "FullFabric"
+  ],
+  "author": "João Ferreira <joao.ferreira@fullfabric.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fullfabric/prettier-cfg/issues"
+  },
+  "homepage": "https://github.com/fullfabric/prettier-cfg#readme",
+  "dependencies": {
+    "prettier": "^2.8.7"
+  },
+  "files": [
+    "index.js"
+  ]
+}
