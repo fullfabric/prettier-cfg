@@ -1,0 +1,32 @@
+name: Check config
+
+on:
+  push:
+    branches: ['**']
+    tags-ignore: ["v*"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+        npm-version: [8.19.3, 9.2.0]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install npm ${{ matrix.npm-version }}
+        run: npm i -g npm@${{ matrix.npm-version }}
+
+      - name: Install modules
+        run: npm ci
+
+      - name: Run lint
+        run: npm test
