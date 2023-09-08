@@ -14,16 +14,14 @@ module.exports = {
     '',
     '<THIRD_PARTY_MODULES>',
     '',
-    '^@(?!fullfabric).+',
     '^@fullfabric/(.*)$',
     '',
     '^spec/',
     '',
-    '^(api|context|hooks|constants|utils)/?',
-    '^(components|pages)/?',
-    '^[./].*(?<![.]s?css)$',
+    '^(api|context|hooks|constants|utils|components|pages|shared|apps)/?', // src/ imports
+    '^[./].*(?<![.]s?css)$', // every other local import except for css files
     '',
-    '^classnames&',
+    '^classnames$',
     '[.]s?css$'
   ],
   importOrderSeparation: false,
