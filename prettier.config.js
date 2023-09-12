@@ -21,7 +21,8 @@ module.exports = {
     '^(.+/)*spec', // spec files
     '',
     '^shared/?',
-    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)/?', // other src/ imports
+    '',
+    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)(/|$)', // other src/ imports
     '^[./].*(?<![.]s?css)$', // relative imports except for css files
     '',
     '^classnames$',

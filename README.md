@@ -25,6 +25,6 @@ module.exports = {
 }
 ```
 
-## Editing
+## Editing and publishing
 
 Just make your changes, update the package version, and `npm publish`.
