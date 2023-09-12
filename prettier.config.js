@@ -10,6 +10,7 @@ module.exports = {
 
   // @ianvs/prettier-plugin-sort-imports
   importOrder: [
+    '', // to add a gap at the top after top-of-file-comments (automatically removed when appropriate)
     '^react(.*)',
     '',
     '<THIRD_PARTY_MODULES>',
@@ -17,16 +18,13 @@ module.exports = {
     '^@(?!fullfabric).+',
     '^@fullfabric/(.*)$',
     '',
-    '^spec/',
+    '^(.+/)*spec', // spec files
     '',
-    '^(api|context|hooks|constants|utils)/?',
-    '^(components|pages)/?',
-    '^[./].*(?<![.]s?css)$',
+    '^shared/?',
+    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)/?', // other src/ imports
+    '^[./].*(?<![.]s?css)$', // relative imports except for css files
     '',
-    '^classnames&',
+    '^classnames$',
     '[.]s?css$'
-  ],
-  importOrderSeparation: false,
-  importOrderSortSpecifiers: true,
-  importOrderMergeDuplicateImports: true
+  ]
 }
