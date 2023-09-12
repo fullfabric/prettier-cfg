@@ -20,11 +20,11 @@ module.exports = {
     '',
     '^(.+/)*spec', // spec files
     '',
-    '^(api|context|hooks|constants|utils|components|pages|shared|apps)/?', // src/ imports
-    '^[./].*(?<![.]s?css)$', // every other local import except for css files
+    '^shared/?',
+    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)/?', // other src/ imports
+    '^[./].*(?<![.]s?css)$', // relative imports except for css files
     '',
     '^classnames$',
-    '[.]s?css$',
-    ''
+    '[.]s?css$'
   ]
 }
