@@ -13,8 +13,9 @@ import Body from '../Body'
 import Footer from './Footer'
 
 import classNames from 'classnames'
-import footerStyles from './Footer/styles.module.scss'
 import styles from 'components/Header/styles.module.scss'
+import footerStyles from './Footer/styles.module.scss'
+import localStyles from './styles.module.scss'
 
 /**
  * Only used to run prettier against this, mostly as a way to check the config

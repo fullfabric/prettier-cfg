@@ -27,6 +27,7 @@ module.exports = {
     '^[./].*(?<![.]s?css)$', // relative imports except for css files
     '',
     '^classnames$',
+    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)[/].+[.]s?css$', // absolute style imports
     '[.]s?css$'
   ]
 }
