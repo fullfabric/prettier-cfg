@@ -23,10 +23,11 @@ module.exports = {
     '^shared/?',
     '',
     '^(containers|reducers|actions)(/|$)', // for projects with redux
-    '^(api|context|hooks|constants|utils|components|pages|i18n|apps).*(?<![.]s?css)$', // other src/ imports, except for css files
+    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)([/].+(?<![.]s?css)$|$)', // other absolute src/ imports, except for css files
     '^[./].*(?<![.]s?css)$', // relative imports except for css files
     '',
     '^classnames$',
+    '^(api|context|hooks|constants|utils|components|pages|i18n|apps)[/].+[.]s?css$', // absolute style imports
     '[.]s?css$'
   ]
 }
