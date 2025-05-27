@@ -1,4 +1,6 @@
 module.exports = {
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
+
   arrowParens: 'always',
   bracketSpacing: true,
   bracketSameLine: false,
@@ -7,6 +9,7 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'none',
+  printWidth: 120,
 
   // @ianvs/prettier-plugin-sort-imports
   importOrder: [
